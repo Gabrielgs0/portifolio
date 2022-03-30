@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Baloo+Da+2:wght@800&family=Sen:wght@400;700;800&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+@keyframes typing{
+	from{
+		width: 0;
+	}
+	to{
+		width: 290px;
+	}
+}
+
+@keyframes jumping{
+    50%{
+        transform: translateY(-20px);
+    }
+}
+
+.typing-animation{
+	animation: typing 1.5s steps(100) 1s normal;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+:root{
+    --cor-nav: #FFF2E7;
+    --cor-nav-hover: #402d2d;
+    --cor-titulo-destaque: #FFF2E7;
+    --cor-titulo: #FFF2E7;
+    --cor-paragrafo: #FFF2E7;
+    --cor-botao: #ECD6C4;
+    --cor-botao-hover: #9E887F;
+    --cor-botao-conteudo: #402d2d;
+    --cor-conteudo: #242121;
+    --cor-conteudo-projeto: #4b4141;
+
+    --fonte-titulo-destaque: 'Baloo Da 2', cursive;;
+    --fonte-titulo: 'Baloo Chettan 2', cursive;
+    --fonte-paragrafo: 'Sen', sans-serif;;
+
+}
+
+html{
+    font-size: 91.0%;
+}
+
+body{
+    background: linear-gradient(68.15deg, #1D2240 25.62%, #1a545a46 85.61%);
+}
+
+main{
+    padding: 0 15px;
+}
+
+
+
+.conteudo-projetos{
+    max-width: 960px;
+    margin: 40px auto;
+}
+.conteudo-projetos-subtitulo{
+    margin-bottom: 30px;
+}
+.conteudo-projetos-escrito{
+    background-color: var(--cor-conteudo);
+    border-radius: 10px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    color: var(--cor-paragrafo);
+    padding-bottom: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.conteudo-projetos-trabalho{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #45858c46;
+    width: 100%;
+    height: 375px;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+}
+.conteudo-projetos-trabalho-conteudo{
+    width: 350px;
+    padding: 10px 25px; 
+}
+.conteudo-projetos-trabalho-conteudo-titulo{
+    font-family: var(--fonte-titulo);
+}
+.conteudo-projetos-trabalho-conteudo-paragrafo{
+    font-family: var(--fonte-paragrafo);
+    margin-top: 20px;
+}
+.conteudo-projetos-trabalho-conteudo-paragrafo a{
+    color: var(--fonte-paragrafo);
+}
+.conteudo-projetos-trabalho-conteudo-paragrafo a:hover{
+    color: var(--fonte-paragrafo);
+}
+.img-trabalho{
+    max-height: 259px;
+    padding: 0px 7px;
+    
+}
