@@ -7,22 +7,28 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="/assets/media/Logo.svg">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="second.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>Gabriel Gonçalves | Desenvolvedor Full Stack</title>
 </head>
 <body>
 
 <main>
     <div class="overlay"></div>
-    <video src="video/bg-video.mp4" muted loop autoplay></video>
+    <video class="video" src="video/bg-video.mp4" muted loop autoplay></video>
     
     <div class="container">
         <div class="main-area">
             <span>Olá! Eu sou</span>
             <h2>Gabriel Gonçalves</h2>
             <span id="message"></span> 
-            <button>SOBRE MIM</button>
+            <a href="#sobre"><button >SOBRE MIM</button></a>
             <div class="arrow">
-               <img src="img/arrow logo.svg" alt="">  
+               <img src="img/seta.svg" alt="">  
             </div>
             
         </div>
@@ -44,7 +50,7 @@
     </div>
 </article>
 
-<section>
+<section id="sobre">
     <div class="asp">
         <div class="left">
         <div class="left-text" data-aos='fade-right' data-aos-duration="3000">
@@ -54,7 +60,7 @@
         </div>
         <div class="right">
             <div class="right-text" data-aos='fade-left' data-aos-duration="3000">
-                <div class="right-title">• Colaboração <br> •  Organização <br> • planejamento <br> • Resiliência <br> • Capacidade de resolver problemas </div>
+                <div class="right-title">• Colaboração <br> •  Organização <br> • Planejamento <br> • Resiliência <br> • Capacidade de resolver problemas </div>
                 <div class="right-desc"></div>
             </div>
         </div>
@@ -117,30 +123,116 @@
     </div>
 </section>
 
-<section id="projetos">
-    <div class="container">
-        <div class="about-area">
-            <div class="about1" data-aos='fade-right' data-aos-offset="250" data-aos-duration="3000" >
-                <div class="projetos-titulo">Projetos</div>
-                <div class="container-projetos">
-                    <div class="pj1">
-                      <a href="https://ggsvideos.netlify.app/" target="_blank" rel="external"><img class="img-projetos" src="img/site de assinatura.png" alt=""></a>
-                    </div>
-                    <div class="pj3">
-                      <a href="https://ggssequencesgame.netlify.app/" target="_blank" rel="external"><img class="img-projetos" src="img/Jogo Das Sequencias.png" alt=""></a>
-                    </div>
-                    <div class="pj1">
-                        <a href="https://ggsjogodavelha.netlify.app/" target="_blank" rel="external"><img class="img-projetos" src="img/Jogo Da Velha.png" alt=""></a>
-                      </div>
-                      <div class="pj3">
-                        <a href="https://ggsmedia.netlify.app/" target="_blank" rel="external"><img class="img-projetos" src="img/condições.png" alt=""></a>
-                      </div>
-                  </div>
-                </div>
-            </div>
-            </section>
-
 <section>
+
+    <section id="projetos" class="conteudo-projetos">
+        <div class="conteudo-projetos-escrito" data-aos="fade-up-right">
+            <h2 class="conteudo-projetos-subtitulo">Projetos</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      
+                    </ol>
+                    
+                        <div class="carousel-inner">
+
+                          <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="conteudo-projetos-trabalho">
+                                <div class="conteudo-projetos-trabalho-conteudo">
+                                    <h1 class="conteudo-projetos-trabalho-conteudo-titulo">Site de Assinaturas
+                                    </h1>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Fiz esse projeto com o intuito de aprimorar meus conhecimentos em Javascript.
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Foi usado HTML, CSS responsive e Javascript.
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Você pode acessar o repositório <a href="#" target="_blank">AQUI!</a>
+                                    </p>
+                                    <button class="conteudo-botao"><a class="conteudo-botao-conteudo" href="https://ggsvideos.netlify.app/" target="_blank">Acesse a página!</a></button>
+                                </div>
+                                <a href="https://ggsvideos.netlify.app/" target="_blank"><img class="img-fluid img-trabalho img-trabalho-grande" src="img/site de assinatura.png" alt="PC"></a>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <div class="conteudo-projetos-trabalho">
+                                <div class="conteudo-projetos-trabalho-conteudo">
+                                    <h1 class="conteudo-projetos-trabalho-conteudo-titulo">Jogo Da Velha #</h1>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, cum quam?
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Lorem ipsum dolor sit amet, consectetur.
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Pariatur, at itaque eos blanditiis.
+                                    </p>
+                                    <button class="conteudo-botao"><a class="conteudo-botao-conteudo" href="https://ggsjogodavelha.netlify.app/" target="_blank">Acesse a página!</a></button>
+                                </div>
+                                <a href="https://ggsjogodavelha.netlify.app/" target="_blank"><img class="img-fluid img-trabalho img-trabalho-grande" src="img/Jogo Da Velha.png" alt="PC"></a>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <div class="conteudo-projetos-trabalho">
+                                <div class="conteudo-projetos-trabalho-conteudo">
+                                    <h1 class="conteudo-projetos-trabalho-conteudo-titulo">Jogo Das Sequencias (Tema Among Us)</h1>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, cum quam?
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Lorem ipsum dolor sit amet, consectetur.
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Pariatur, at itaque eos blanditiis.
+                                    </p>
+                                    <button class="conteudo-botao"><a class="conteudo-botao-conteudo" href="https://ggssequencesgame.netlify.app/" target="_blank">Acesse a página!</a></button>
+                                </div>
+                                <a href="https://ggssequencesgame.netlify.app/" target="_blank"><img class="img-fluid img-trabalho img-trabalho-grande" src="img/Jogo Das Sequencias.png" alt="PC"></a>
+                            </div>
+                          </div>
+
+                          <div class="carousel-item" data-bs-interval="10000">
+                            <div class="conteudo-projetos-trabalho">
+                                <div class="conteudo-projetos-trabalho-conteudo">
+                                    <h1 class="conteudo-projetos-trabalho-conteudo-titulo">Calculo Média</h1>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, cum quam?
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Lorem ipsum dolor sit amet, consectetur.
+                                    </p>
+                                    <p class="conteudo-projetos-trabalho-conteudo-paragrafo">
+                                        Pariatur, at itaque eos blanditiis.
+                                    </p>
+                                    <button class="conteudo-botao"><a class="conteudo-botao-conteudo" href="https://ggsmedia.netlify.app/" target="_blank">Acesse a página!</a></button>
+                                </div>
+                                <a href="https://ggsmedia.netlify.app/" target="_blank"><img class="img-fluid img-trabalho img-trabalho-grande" src="img/condições.png" alt="PC"></a>
+                            </div>
+                          </div>
+
+                        </div>
+
+                    <a id="btn-prev" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a id="btn-next" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+
+                </div>
+        </div>
+    </section>
+
+
     <div class="container">
         <div class="title" data-aos="fade-up" data-aos-delay="500" data-aos-duration="3000">Contato</div>
         <div class="contact">
