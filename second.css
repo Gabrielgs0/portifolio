@@ -65,6 +65,11 @@ main{
     max-width: 960px;
     margin: 40px auto;
 }
+.conteudo-botao{
+    background-color: #1D2240;
+    
+}
+
 .conteudo-projetos-subtitulo{
     margin-bottom: 30px;
 }
@@ -79,7 +84,6 @@ main{
 }
 .conteudo-projetos-trabalho{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     background-color: #45858c46;
     width: 100%;
@@ -108,5 +112,10 @@ main{
 .img-trabalho{
     max-height: 259px;
     padding: 0px 7px;
-    
+}
+
+@media (max-width: 600px){
+    #img-projetos{
+        width: 150px;
+    }
 }
