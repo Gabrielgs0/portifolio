@@ -59,6 +59,10 @@ main{
     padding: 0 15px;
 }
 
+span{
+    text-shadow: 1px 1px 1px #000;
+    color: #3c4da0;
+}
 
 
 .conteudo-projetos{
